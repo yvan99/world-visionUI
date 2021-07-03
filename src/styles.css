@@ -1,0 +1,41 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.hero img {
+    height: 65vh;
+  }
+  
+  .heading-container {
+    height: 65vh;
+    top: -50px;
+  }
+  .hero{
+    background-image: url('../public/assets/images/intro.png');
+  }
+  .text-yellow-500{
+    color: #ff6602 !important;
+  }
+  /* width */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #edf2f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}

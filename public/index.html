@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>World Vision Rwanda</title>
+</head>
+
+<body>
+    <header x-data="{ isOpen: false }" class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-3 border-b-2 border-worldVisionColor-500 border-solid">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <a href="">
+                            <img src="assets/images/png-transparent-world-vision-international-world-vision-india-charitable-organization-child-sponsorship-study-in-canada-thumbnail.png" class="w-40" alt="" srcset="">
+                        </a>
+                      
+
+                        <!-- Search input on desktop screen -->
+                        <div class="mx-10 hidden md:block">
+                            <input type="text"
+                                class="w-32 lg:w-64 px-4 py-3 leading-tight text-sm text-gray-700 bg-gray-100 rounded-md placeholder-gray-500 border border-transparent focus:outline-none focus:bg-white focus:shadow-outline focus:border-blue-400"
+                                placeholder="Search" aria-label="Search">
+                        </div>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="flex md:hidden">
+                        <button @click="isOpen = !isOpen" type="button"
+                            class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
+                            aria-label="toggle menu">
+                            <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path fill-rule="evenodd"
+                                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                <div class="md:flex items-center" :class="isOpen ? 'block' : 'hidden'">
+                    <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
+                        <a class="my-1 text-lg text-gray-700 leading-5 hover:text-blue-600 hover:underline hover:bg-worldVisionColor-500  md:mx-4 md:my-0"
+                            href="#">Home</a>
+                        <a class="my-1 text-lg text-gray-700 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0"
+                            href="#">About Us</a>
+                        <a class="my-1 text-lg text-gray-700 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0"
+                            href="#">Donate</a>
+                        <a class="my-1 text-lg text-gray-700 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0"
+                            href="#">Sponsor A child</a>
+                    </div>
+
+                    <div class="flex items-center py-2 -mx-1 md:mx-0">
+                        <a class="block w-1/2 px-3 py-2 mx-1 rounded text-center text-lg bg-gray-900 font-medium text-white leading-5 hover:bg-gray-900 md:mx-2 md:w-auto"
+                            href="login.html">Login</a>
+                        <a class="block w-1/2 px-3 py-2 mx-1 rounded border-gray-900 text-center text-lg bg-worldVisionColor-500 font-medium text-white leading-5 hover:bg-gray-900 md:mx-0 md:w-auto"
+                            href="#">Join free</a>
+                    </div>
+
+                    <!-- Search input on mobile screen -->
+                    <!-- <div class="mt-3 md:hidden">
+                <input type="text" class="w-full px-4 py-3 leading-tight text-sm text-gray-700 bg-gray-100 rounded-md placeholder-gray-500 focus:outline-none focus:bg-white focus:shadow-outline" placeholder="Search" aria-label="Search">
+              </div>
+            </div> -->
+                </div>
+        </nav>
+    </header>
+    <div class="w-full h-full">
+    <section class="m-5 flex justify-center items-center" role="main">
+        <div class="px-16">
+
+            <h1 class="mt-2 text-5xl font-headline tracking-tight font-extrabold text-worldVisionColor-500 leading-snug" role="heading" aria-level="1">
+                World Vision Foundation <br />
+                <!-- <span class="text-green-700" role="heading" aria-level="1">And we deliver them for you.</span> -->
+            </h1>
+            <p class="w-4/5 mt-6 text-gray-700 text-lg" aria-level="2">
+                That's because we're a global Christian humanitarian organization. We partner with children, families, and their communities to reach their full potential by tackling the causes of poverty and injustice.
+            </p>
+            <div class="mt-8 flex" aria-level="3" role="button">
+                <a class="flex items-center lg\:drop-shadow-lg transition duration-500 ease-in-out hover:bg-gray-900 transform hover:-translate-y-1 hover:scale-110 justify-center px-8 py-3 font-medium rounded-md text-white bg-worldVisionColor-500 shadow uppercase"
+                    href="login.html">Get Started</a>
+                <a class="flex items-center justify-center px-8 py-3 ml-4 font-medium rounded-md text-white bg-gray-900 shadow uppercase transition duration-500 ease-in-out hover:bg-worldVisionColor-500 transform hover:-translate-y-1 hover:scale-110"
+                    href="#">Learn more</a>
+            </div>
+        </div>
+        <div class="mr-20" role="img">
+            <img class="object-cover object-center w-90 hover:-animate-bounce"
+                src="assets/images/h2-slider02.png" alt="Image of plants" />
+        </div>
+        <svg class="animate-bounce w-6 h-6 ...">
+            <!-- ... -->
+          </svg>
+    </section>
+</div>
+
+    <section class="features-cards bg-white">
+        <div class="items-center px-10">
+            <h1 class="text-center text-gray-700 text-4xl font-extrabold">Working Together</h1>
+            <p class="text-center text-gray-900 m-10">We are a global Christian humanitarian organization. We partner with children, families and their communities to help them reach their full potential by tackling the causes of poverty and injustice in Rwanda</p>
+        </div>
+
+        <div class="m-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-2">
+            <!--Card 1-->
+            <div class="rounded overflow-hidden shadow-lg">
+              <img class="w-full" src="assets/images/ARFY18_Rwanda - Education.png" alt="Mountain">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Education</div>
+                <p class="text-gray-700 text-base">
+                 We want to see all children in Rwanda have the opportunity to receive a quality education that will prepare them for the opportunities and challenges of the future. We are working towards
+                </p>
+              </div>
+
+            </div>
+            <!--Card 2-->
+            <div class="rounded overflow-hidden shadow-lg">
+              <img class="w-full" src="assets/images/ARFY18_Rwanda - Health.png" alt="River">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Health and Nutrition</div>
+                <p class="text-gray-700 text-base">
+                 We want to see all children in Rwanda have the opportunity to receive a quality education that will prepare them for the opportunities and challenges of the future. We are working towards
+                </p>
+              </div>
+            </div>
+        
+            <!--Card 3-->
+            <div class="rounded overflow-hidden shadow-lg">
+              <img class="w-full" src="assets/images/Pineapple 1_0.jpg" alt="Forest">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Cooperatives paving the way for community transformation</div>
+                <p class="text-gray-700 text-base">
+                    Beata, 45, is a mother of two. She was among the poorest, living in abject poverty in her community.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        
+    </section>
+
+    </main>
+    <footer class="footer bg-white relative pt-1 border-b-2 border-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
+                <div class="sm:w-2/3 text-center py-6">
+
+                    <p class="text-sm text-gray-700 text-center font-bold mb-2">
+                        © World Vision Foundation  2021 - Powered By ISHIMWE Ivan
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</html>
