@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+        .font-family-Poppins {
+            font-family: Poppins;
+        }
+    </style>
+</head>
+<body class="bg-white font-family-Poppins h-screen">
+
+    <div class="w-full flex flex-wrap">
+
+                <!-- Image Section -->
+                <div class="w-1/2 shadow-sm">
+                    <img class="object-cover w-full h-screen hidden md:block" src="assets/images/ARFY18_Rwanda - Education.png">
+                </div>
+
+        <!-- Login Section -->
+        <div class="w-full md:w-1/2 flex flex-col">
+
+            <div class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
+                <p class="text-left text-2xl p-0">Welcome back</p>
+                <strong class="text-left text-3xl font-extrabold">Login to your account</strong>
+                <form class="flex flex-col pt-3 md:pt-8">
+                    <div class="flex flex-col pt-4">
+                        <input type="email" id="email" placeholder="your@email.com" class="appearance-none rounded w-full p-2  px-3 text-gray-700 bg-gray-100 rounded-md placeholder-gray-500 border border-transparent focus:outline-none focus:bg-white focus:shadow-outline focus:border-blue-400 ">
+                    </div>
+    
+                    <div class="flex flex-col pt-4">
+
+                        <input type="password" id="password" placeholder="Password" class="appearance-none rounded w-full py-2 px-3 text-gray-700 bg-gray-100 rounded-md placeholder-gray-500 border border-transparent focus:outline-none focus:bg-white focus:shadow-outline focus:border-blue-400 ">
+                    </div>
+    
+                    <input type="submit" value="Log In" class="bg-worldVisionColor-500 rounded-lg text-white font-bold text-lg cursor-pointer p-2 mt-8">
+                </form>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
